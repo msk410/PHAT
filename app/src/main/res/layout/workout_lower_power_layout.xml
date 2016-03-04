@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phatworkout.poweruser.workouttest.UpperPowerTest"
+    android:id="@+id/lowerPowerFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE1S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE1S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE1S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE1S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE1S3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignBottom="@+id/lpE1S2"
+                    android:layout_toRightOf="@+id/lpE1S2"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 x squats @ "
+                    android:id="@+id/lpE1Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE1S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE1Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_toRightOf="@+id/lpE1Info"
+                    android:layout_above="@+id/lpE1S1"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE2S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE2S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE2S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE2S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x hack squats @ "
+                    android:id="@+id/lpE2Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE2S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE2Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE2S1"
+                    android:layout_toRightOf="@+id/lpE2Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE3S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE3S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE3S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE3S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x leg extensions @"
+                    android:id="@+id/lpE3Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE3S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE3Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE3S1"
+                    android:layout_toRightOf="@+id/lpE3Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE4S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE4S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE4S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE4S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE4S3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignBottom="@+id/lpE4S2"
+                    android:layout_toRightOf="@+id/lpE4S2"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 x stiff \nlegged deadlifts @ "
+                    android:id="@+id/lpE4Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE4S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE4Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE4S1"
+                    android:layout_toRightOf="@+id/lpE4Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE5S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE5S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE5S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE5S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x lying leg curls @ "
+                    android:id="@+id/lpE5Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE5S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE5Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE5S1"
+                    android:layout_toRightOf="@+id/lpE5Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE6S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE6S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE6S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE6S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE6S3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE6S2"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE6S2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x standing \ncalf raises @ "
+                    android:id="@+id/lpE6Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE6S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE6Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE6S1"
+                    android:layout_toRightOf="@+id/lpE6Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE7S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/lpE7S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/lpE7S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/lpE7S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x seated \ncalf raises @ "
+                    android:id="@+id/lpE7Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE7S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/lpE7Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/lpE7S1"
+                    android:layout_toRightOf="@+id/lpE7Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Workout"
+        android:id="@+id/logWorkoutButton2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right" />
+</RelativeLayout>

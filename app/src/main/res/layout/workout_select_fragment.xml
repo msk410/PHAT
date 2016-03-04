@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upper Body Power"
+        android:id="@+id/upperPowerSelector"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/lowerPowerSelector"
+        android:layout_alignEnd="@+id/lowerPowerSelector"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lower Body Power"
+        android:id="@+id/lowerPowerSelector"
+        android:layout_below="@+id/upperPowerSelector"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back and Shoulders"
+        android:id="@+id/bsSelector"
+        android:layout_below="@+id/lowerPowerSelector"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lower Body Hypertrophy"
+        android:id="@+id/lhSelector"
+        android:layout_below="@+id/bsSelector"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chest and Arms"
+        android:id="@+id/chestSelector"
+        android:layout_below="@+id/lhSelector"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+</RelativeLayout>

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phatworkout.poweruser.workouttest.UpperPowerTest"
+    android:id="@+id/chestLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chestE1S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chestE1S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE1S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE1S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chestE1S3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE1S2"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE1S2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chestE1S4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE1S3"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE1S3"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chestE1S5"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE1S4"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE1S4"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chestE1S6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignBottom="@+id/chestE1S5"
+                    android:layout_toRightOf="@+id/chestE1S5"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 x speed flat \ndumbbell presses @ "
+                    android:id="@+id/chestE1Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE1S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE1Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_toRightOf="@+id/chestE1Info"
+                    android:layout_above="@+id/chestE1S1"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE2S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE2S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE2S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE2S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE2S3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE2S2"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE2S2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 x incline \ndumbbell presses @"
+                    android:id="@+id/chestE2Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE2S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE2Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE2S1"
+                    android:layout_toRightOf="@+id/chestE2Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE3S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE3S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE3S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE3S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE3S3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE3S2"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE3S2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 x hammer strength \nchest press @"
+                    android:id="@+id/chestE3Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE3S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE3Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE3S1"
+                    android:layout_toRightOf="@+id/chestE3Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE4S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE4S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE4S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE4S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 x incline \ncable flyes @ "
+                    android:id="@+id/chestE4Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE4S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE4Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE4S1"
+                    android:layout_toRightOf="@+id/chestE4Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE5S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE5S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE5S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE5S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE5S3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE5S2"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE5S2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 x cambered bar \npreacher curls @ "
+                    android:id="@+id/chestE5Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE5S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE5Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE5S1"
+                    android:layout_toRightOf="@+id/chestE5Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE6S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE6S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE6S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE6S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 x dumbbell \nconcentration curls @ "
+                    android:id="@+id/chestE6Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE6S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE6Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE6S1"
+                    android:layout_toRightOf="@+id/chestE6Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE7S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE7S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE7S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE7S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 x spider curls @ "
+                    android:id="@+id/chestE7Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE7S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE7Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE7S1"
+                    android:layout_toRightOf="@+id/chestE7Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE8S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE8S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE8S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE8S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE8S3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE8S2"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE8S2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 x seated \ntricep extensions @ "
+                    android:id="@+id/chestE8Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE8S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE8Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE8S1"
+                    android:layout_toRightOf="@+id/chestE8Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE9S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE9S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE9S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE9S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 x rope \npress downs @ "
+                    android:id="@+id/chestE9Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE9S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE9Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE9S1"
+                    android:layout_toRightOf="@+id/chestE9Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE10S1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/chestE10S2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/chestE10S1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/chestE10S1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 x cable kickbacks @ "
+                    android:id="@+id/chestE10Info"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE10S1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/chestE10Weight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/chestE10S1"
+                    android:layout_toRightOf="@+id/chestE10Info"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Workout"
+        android:id="@+id/logWorkoutButton5"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right" />
+</RelativeLayout>

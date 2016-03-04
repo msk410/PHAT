@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phatworkout.poweruser.workouttest.UpperPowerTest"
+    android:id="@+id/upperFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/rowSet1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/rowSet2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/rowSet1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/rowSet1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/rowSet3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignBottom="@+id/rowSet2"
+                    android:layout_toRightOf="@+id/rowSet2"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 x rows @ "
+                    android:id="@+id/rowInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/rowSet1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/rowWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_toRightOf="@+id/rowInfo"
+                    android:layout_above="@+id/rowSet1"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/pullUps1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/pullUps2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/pullUps1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/pullUps1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x weighted \npull ups @ "
+                    android:id="@+id/pullUpsInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/pullUps1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/pullUpsWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/pullUps1"
+                    android:layout_toRightOf="@+id/pullUpsInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/rackPulls1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/rackPulls2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/rackPulls1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/rackPulls1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x rack chins"
+                    android:id="@+id/rackPullInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/rackPulls1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/benchPress1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/benchPress2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/benchPress1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/benchPress1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/benchPress3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignBottom="@+id/benchPress2"
+                    android:layout_toRightOf="@+id/benchPress2"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 x bench press @ "
+                    android:id="@+id/benchPressInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/benchPress1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/benchPressWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/benchPress1"
+                    android:layout_toRightOf="@+id/benchPressInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/weightedDips1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/weightedDips2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/weightedDips1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/weightedDips1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x weighted dips @ "
+                    android:id="@+id/weightedDipsInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/weightedDips1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/weightedDipsWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/weightedDips1"
+                    android:layout_toRightOf="@+id/weightedDipsInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/shoulderPress1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/shoulderPress2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/shoulderPress1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/shoulderPress1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/shoulderPress3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/shoulderPress2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/shoulderPress2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x shoulder press @ "
+                    android:id="@+id/shoulderPressInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/shoulderPress1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/shoulderPressWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/shoulderPress1"
+                    android:layout_toRightOf="@+id/shoulderPressInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/camberedBarCurls1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/camberedBarCurls2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/camberedBarCurls1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/camberedBarCurls1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/camberedBarCurls3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/camberedBarCurls2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/camberedBarCurls2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x cambered \nbar curls @ "
+                    android:id="@+id/camberedBarCurlsInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/camberedBarCurls1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/camberedBarCurlsWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/camberedBarCurls1"
+                    android:layout_toRightOf="@+id/camberedBarCurlsInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="10" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/skullCrushers1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/skullCrushers2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/skullCrushers1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/skullCrushers1"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:id="@+id/skullCrushers3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@+id/skullCrushers2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/skullCrushers2"
+                    android:background="@drawable/round_button"
+                    android:nestedScrollingEnabled="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 x skull crushers @ "
+                    android:id="@+id/skullCrushersInfo"
+                    android:layout_marginBottom="20dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/skullCrushers1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:id="@+id/skullCrushersWeight"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_above="@+id/skullCrushers1"
+                    android:layout_toRightOf="@+id/skullCrushersInfo"
+                    android:layout_marginBottom="10dp"
+                    android:text="10" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Workout"
+        android:id="@+id/logWorkoutButton1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right" />
+
+
+</RelativeLayout>
